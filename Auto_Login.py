@@ -25,10 +25,12 @@ class Twitch_log():
 
 
         self.accounts = {
-            #"Main": {self.username: "sikicemjackson", self.password: "Internet07dasvierte", self.mail:"sommer.silvan3@gmail.com", self.password_mail:"Internet07dasvierte"},
+            #"Main": {self.username: "sikicemjackson", self.password: "*************", self.mail:"sommer.silvan3@gmail.com", self.password_mail:"*************"},
             "1":{self.username:"dellasderaller", self.password:"IQwww349DF", self.mail:"siki.cemmii@gmail.com", self.password_mail:"Internet07dasvierte"},
             "2":{self.username:"markoderalleer", self.password:"Hee123dssaL6", self.mail:"bot.trackerreport@gmail.com", self.password_mail:"dasvierte"},
-            "3":{self.username:"phillippderaller", self.password:"dfrSS349jfhg", self.mail:"wtdddfekomsichg@gmail.com", self.password_mail:"cdksks/()==(sdkf"}
+            "3":{self.username:"phillippderaller", self.password:"dfrSS349jfhg", self.mail:"wtdddfekomsichg@gmail.com", self.password_mail:"cdksks/()==(sdkf"},
+            "4":{self.username:"krebsderaller", self.password:"hHHSF23454jDJJD", self.mail:"krebsderaller@gmail.com", self.password_mail:"dkfsk%&/FFFG"},
+            "5":{self.username:"lionderaller", self.password:"HHGT666666788SDD", self.mail:"lionderaller@gmail.com", self.password_mail:"Lkkkpo))894GSJ"}
         }
 
 
