@@ -8,6 +8,8 @@ from pynput.keyboard import Key, Controller
 import Get_Mail
 
 
+
+
 class Twitch_log():
 
 
@@ -26,13 +28,23 @@ class Twitch_log():
 
         self.accounts = {
             #"Main": {self.username: "sikicemjackson", self.password: "*************", self.mail:"sommer.silvan3@gmail.com", self.password_mail:"*************"},
-            "1":{self.username:"dellasderaller", self.password:"IQwww349DF", self.mail:"siki.cemmii@gmail.com", self.password_mail:"Internet07dasvierte"},
-            "2":{self.username:"markoderalleer", self.password:"Hee123dssaL6", self.mail:"bot.trackerreport@gmail.com", self.password_mail:"dasvierte"},
-            "3":{self.username:"phillippderaller", self.password:"dfrSS349jfhg", self.mail:"wtdddfekomsichg@gmail.com", self.password_mail:"cdksks/()==(sdkf"},
-            "4":{self.username:"krebsderaller", self.password:"hHHSF23454jDJJD", self.mail:"krebsderaller@gmail.com", self.password_mail:"dkfsk%&/FFFG"},
-            "5":{self.username:"lionderaller", self.password:"HHGT666666788SDD", self.mail:"lionderaller@gmail.com", self.password_mail:"Lkkkpo))894GSJ"}
-        }
+            #"1":{self.username:"markoderalleer", self.password:"Hee123dssaL6", self.mail:"bot.trackerreport@gmail.com", self.password_mail:"12345678AaS"},
 
+            "2":{self.username:"dellasderaller", self.password:"IQwww349DF", self.mail:"siki.cemmii@gmail.com", self.password_mail:"Internet07dasvierte"},
+            "1":{self.username:"phillippderaller", self.password:"dfrSS349jfhg", self.mail:"wtdddfekomsichg@gmail.com", self.password_mail:"cdksks/()==(sdkf"},
+            "3":{self.username:"krebsderaller", self.password:"hHHSF23454jDJJD", self.mail:"krebsderaller@gmail.com", self.password_mail:"dkfsk%&/FFFG"},
+            "4":{self.username:"lionderaller", self.password:"HHGT666666788SDD", self.mail:"lionderaller@gmail.com", self.password_mail:"Lkkkpo))894GSJ"},
+            "5":{self.username:"Christinderaller", self.password:"christindugeile()()", self.mail:"christinaderaller@gmail.com", self.password_mail:"lakdpQWWER2325"},
+            "6":{self.username:"Nurcettzideraller", self.password:"xsAAPjj6432", self.mail:"nurcetzkideraller@gmail.com", self.password_mail:"jjklplBBDF3434"},
+            "7":{self.username:"iceteaderaller", self.password:"kppiKKkdk678", self.mail:"iceteaderalller@gmail.com", self.password_mail:"jJJjkkll344334"},
+            "8":{self.username:"cpuderaller", self.password:"hhaddERE33332", self.mail:"cpuderalller@gmail.com", self.password_mail:"asdertfASDERZ"},
+            "9":{self.username:"karitzideraller", self.password:"HHHkkkdkdkd", self.mail:"karitzideraller@gmail.com", self.password_mail:"Awwwq2888765"},
+            "10":{self.username:"beschederaller", self.password:"hGF9343hfhjJDjhjaksd", self.mail:"beschederaller@gmail.com", self.password_mail:"ZZ233234Hfda"},
+            "11":{self.username:"coopderaller", self.password:"JJKlpoPPPP", self.mail:"coopderaller@gmail.com", self.password_mail:"DSDdfffff233"},
+            "12":{self.username:"patrickderaller", self.password:"hhhTTTR567373", self.mail:"patrickderaller@gmail.com", self.password_mail:"hjkjdlPPPOP9889"},
+            "13":{self.username:"harveyderaller", self.password:"Aaasd325AAsfffffJKDKFH", self.mail:"harveyderaller@gmail.com", self.password_mail:"hg67654GGGfdtr"},
+            "14":{self.username:"michaelderaller", self.password:"halKKPOU8646238", self.mail:"michaealderaller@gmail.com", self.password_mail:"wREQZhfgs5456"}
+        }
 
 
 
@@ -49,12 +61,12 @@ class Twitch_log():
 
 
             subprocess.call("google")
-            time.sleep(3)
+            time.sleep(2.5)
             keyboard.press_and_release("tab")
             time.sleep(0.5)
             keyboard.write(self.url)
             keyboard.press_and_release("enter")
-            time.sleep(3)
+            time.sleep(2)
 
 
 
@@ -66,7 +78,7 @@ class Twitch_log():
             keyboard.press_and_release("tab")
             keyboard.write(self.accounts[str(acc)][self.password])
             keyboard.press_and_release("enter")
-            time.sleep(10)
+            time.sleep(6)
 
 
             self.Get_Mail.set_mail(mail_addres=self.accounts[str(acc)][self.mail], password=self.accounts[str(acc)][self.password_mail])
@@ -84,7 +96,7 @@ class Twitch_log():
             time.sleep(0.1)
 
             keyboard.press_and_release("enter")
-            time.sleep(3)
+            time.sleep(2.5)
 
             keyboard.press_and_release("tab")
             time.sleep(0.5)
@@ -114,20 +126,19 @@ class Twitch_log():
 
 
 
-            time.sleep(2)
+            time.sleep(2.5)
             keyboard.press_and_release("down arrow")
             keyboard.press_and_release("down arrow")
             keyboard.press_and_release("down arrow")
             keyboard.press_and_release("enter")
-
-            time.sleep(5)
-
+            time.sleep(2)
 
 
-
+            if(acc == 8):
+                input("VPN connection >> ")
 
 
 
 if __name__ == "__main__":
     Twitch = Twitch_log()
-    Twitch.log(3)
+    Twitch.log(1)

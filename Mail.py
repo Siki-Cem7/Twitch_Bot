@@ -67,6 +67,7 @@ class Mail():
 
         html = BeautifulSoup(raw_email, "html.parser")
         self.code = html.find(class_="3Dheader-message-code")
+        print(self.code)
         self.code = self.code.get_text()
 
 
